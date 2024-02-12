@@ -1,0 +1,46 @@
+example:1
+f=open('new.txt')
+print(f.read())
+
+example:2
+f=open('newexample.txt','w')
+f.write("farhan saeed")
+f.close()
+
+example:3
+f=open('new.txt','a')
+f.write("So practice it daily")
+f=open('new.txt')
+print(f.read())
+
+example:4
+f=open('new.txt')
+print(f.read(5))
+print(f.tell())
+f.seek(0)
+
+example:5
+f=open('new.txt')
+f.seek(0)
+for line in f:
+    print(line)
+
+example:6
+f=open('new.txt')
+print(f.readline())
+print(f.readline())
+print(f.readline(10))
+
+example:7
+f=open('new.txt')
+print(f.readline())
+print(f.readlines())
+print(f.readline(10))
+
+example:8
+import csv
+with open("student.csv", "w", newline='') as file:
+    writer = csv.write(file)
+    writer.writerow(["SN", "Movie", "Portagonist"])
+    writer.writerow([1, "lord of the rings", "frodo baggins"])
+    writer.writerow([2, "harry potter", "harry potter"])

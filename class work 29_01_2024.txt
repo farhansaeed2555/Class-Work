@@ -1,0 +1,64 @@
+EXAMPLE:1
+age = int(input("Enter age:"));
+if age> 18:
+    print("You are eligible to vote !!");
+else:
+    print("sorry!you have to wait!!");
+
+EXAMPLE:2
+number = int(input("Enter the number?"))
+if number == 10:
+    print("The given number is equal to 10")
+elif number == 50:
+        print("The given number is equal to 50 ")
+elif number == 100:
+     print("The given number is equal to 100 ")
+    
+EXAMPLE:3
+languages = ['Swift', 'python', 'go', 'JavaScript']
+for language in languages:
+    print(language)
+
+EXAMPLE:4
+number = 0
+while number < 10000:
+    print(f"number {number}!")
+    number = number + 1
+
+EXAMPLE:5
+import math
+x = math.sqrt(50)
+print(x)
+
+EXAMPLE:6
+import math
+x = math.ceil(1.4)
+y = math.floor(1.4)
+print(x)
+
+EXAMPLE:7
+def fun():
+    print("bano qaabil")
+fun()
+
+EXAMPLE:8
+ages = {"maaz": 15, "farhan": 17}
+print (ages["farhan"])
+
+EXAMPLE:9
+ages = [19, 26, 23]
+print(ages)
+
+EXAMPLE:10
+languages = ["python", "Swift", "c++"]
+print(languages[2])
+
+EXAMPLE:11
+print("      bano qabil        if else")
+a=int(input("Enter your number:"))
+if a%2==0:
+    print("The given number is an even number")
+else:
+    print("Yor given number is odd")
+
+

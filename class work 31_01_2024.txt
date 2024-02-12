@@ -1,0 +1,113 @@
+EXAMPLE:1
+#define a class
+class Bike:
+    name = ""
+    gear = 0
+    
+#creat object of class
+bike1 = Bike()
+
+#access attributes and assing new values 
+bike1.gear = 11
+bike1.name = "mountain Bike"
+
+print(f"Name: {bike1.name}, Gears: {bike1.gear}")
+
+
+EXAMPLE:2
+class Human:
+    attr1 = "human"
+    attr2 = "student"
+    def fun(self):
+        print("i am a", self.attr1)
+        print("i am a", self.attr2)
+Rodger = Human()
+
+print(Rodger.attr1)
+Rodger.fun()
+
+
+EXAMPLE:3
+class Python:
+	def __init__(self, name, company):
+		self.name = name
+		self.company = company
+	def show(self):
+		print("Hello my name is " + self.name+" and I" +
+			" work in "+self.company+".")
+obj = Python("Farhan", "Bano Qabil")
+obj.show()
+
+
+EXAMPLE:4
+# Sample class with init method
+class Person:
+	# init method or constructor
+	def __init__(self, name):
+		self.name = name
+	# Sample Method
+	def say_hi(self):
+		print('Hello, my name is', self.name)
+p = Person('Farhan')
+p.say_hi()
+
+
+EXAMPLE:5
+# define a class
+class Employee:
+    # define an attribute
+    employee_id = 0
+# create two objects of the Employee class
+employee1 = Employee()
+employee2 = Employee()
+# access attributes using employee1
+employee1.employeeID = 1001
+print(f"Employee ID: {employee1.employeeID}")
+# access attributes using employee2
+employee2.employeeID = 1002
+print(f"Employee ID: {employee2.employeeID}")
+
+
+EXAMPLE:6
+class Room:
+    lenght = 0.0
+    breadth = 0.0
+    def calculate_area(self):
+        print("Area of Room =", self.lenght * self.breadth)
+study_room = Room()
+study_room.lenght = 42.0
+study_room.breadth = 30.0
+study_room.calculate_area()
+
+
+EXAMPLE:7
+class Employee:
+    __id=0
+    __name=""
+    __gender=""
+    __city=""
+    __salary=0
+    def setData(self):
+        self.__id=int(input("Enter Id:\t"))
+        self.__name = input("Enter Name:\t")
+        self.__gender = input("Enter Gender:\t")
+        self.__city = input("Enter City:\t")
+        self.__salary = int(input("Enter Salary:\t"))
+    def showData(self):
+        print("Id\t\t:",self.__id)
+        print("Name\t:", self.__name)
+        print("Gender\t:", self.__gender)
+        print("City\t:", self.__city)
+        print("Salary\t:", self.__salary)
+
+
+def main():
+    #Employee Object
+    emp=Employee()
+    emp.setData()
+    emp.showData()
+
+if __name__=="__main__":
+    main()
+
+
